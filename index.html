@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice roller</title>
+</head>
+
+<body>
+    <form id="roll-input" action="rolling-dice">
+        <input type="text" id="number-of-rolls" name="rolls" required minlength="1" maxlength="1" size="1">
+        <button id="roll">Roll!</button>
+    </form>
+
+    <h1 id="sum-of-rolls">Total</h1>
+    <button id="show-all-rolls">Show all rolls</button>
+    <ol id="all-rolls">
+
+    </ol>
+
+    <script src="./assets/javascript/main.js"></script>
+</body>
+
+</html>
