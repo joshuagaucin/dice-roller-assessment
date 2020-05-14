@@ -8,17 +8,18 @@
 </head>
 
 <body>
-    <form id="roll-input" action="rolling-dice">
-        <input type="text" id="number-of-rolls" name="rolls" required minlength="1" maxlength="1" size="1">
-        <button id="roll">Roll!</button>
-    </form>
 
-    <h1 id="sum-of-rolls">Total</h1>
+    <input type="text" id="number-of-rolls" name="rolls" required minlength="1" maxlength="2" size="2">
+    <button id="roll">Roll a D6!</button>
+    <input type="text" id="number-of-rolls-D20" name="rolls" required minlength="1" maxlength="2" size="2">
+    <button id="roll-D20">Roll a D20!</button>
+
+    <h1 id="sum-of-rolls"></h1>
     <button id="show-all-rolls">Show all rolls</button>
     <ol id="all-rolls">
 
     </ol>
-
+    <button id="reset">Reset</button>
     <script src="./assets/javascript/main.js"></script>
 </body>
 
