@@ -49,9 +49,12 @@ rollD20.addEventListener('click', function() {
 showAll.addEventListener('click', function() {
     let i = 0
     while (i < dieRolls.length) {
-        allRolls.innerHTML += "<li>" + dieRolls.push([i]) + "</li>"
+        //let newList = document.createElement('li')
+        //newList.innerHTML = dieRolls[i]
+        //allRolls.appendChild(newList)
+        allRolls.innerHTML += "<li>" + dieRolls.pop([i]) + "</li>"
         i += 1
-        console.log(allRolls)
+            // console.log(allRolls)
     }
 
 })
@@ -60,7 +63,7 @@ reset.addEventListener('click', function() {
     numRolls.value = ""
     total.innerHTML = ""
     allRolls.innerHTML = ""
-    dieRolls = [""]
+    dieRolls = ['']
     numRollsD20.value = ""
     totalRolls = 0
 

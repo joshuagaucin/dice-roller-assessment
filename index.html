@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice roller</title>
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
 </head>
 
 <body>
+    <div id="container">
+        <input type="text" id="number-of-rolls" name="rolls" required minlength="1" maxlength="2" size="2">
+        <button id="roll">Roll a D6!</button>
+        <input type="text" id="number-of-rolls-D20" name="rolls" required minlength="1" maxlength="2" size="2">
+        <button id="roll-D20">Roll a D20!</button>
 
-    <input type="text" id="number-of-rolls" name="rolls" required minlength="1" maxlength="2" size="2">
-    <button id="roll">Roll a D6!</button>
-    <input type="text" id="number-of-rolls-D20" name="rolls" required minlength="1" maxlength="2" size="2">
-    <button id="roll-D20">Roll a D20!</button>
+        <h1 id="sum-of-rolls"></h1>
+        <button id="show-all-rolls">Show all rolls</button>
+        <ol id="all-rolls">
 
-    <h1 id="sum-of-rolls"></h1>
-    <button id="show-all-rolls">Show all rolls</button>
-    <ol id="all-rolls">
+        </ol>
+        <button id="reset">Reset</button>
+    </div>
 
-    </ol>
-    <button id="reset">Reset</button>
+
     <script src="./assets/javascript/main.js"></script>
 </body>
 
