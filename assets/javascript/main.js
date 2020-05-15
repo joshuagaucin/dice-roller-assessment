@@ -49,9 +49,9 @@ rollD20.addEventListener('click', function() {
 showAll.addEventListener('click', function() {
     let i = 0
     while (i < dieRolls.length) {
-        //let newList = document.createElement('li')
-        //newList.innerHTML = dieRolls[i]
-        //allRolls.appendChild(newList)
+        // let newList = document.createElement('li')
+        //newList.innerHTML = dieRolls.pop([i])
+        //allRolls.appendChild(newList) 
         allRolls.innerHTML += "<li>" + dieRolls.pop([i]) + "</li>"
         i += 1
             // console.log(allRolls)
