@@ -10,17 +10,21 @@
 
 <body>
     <div id="container">
-        <input type="text" id="number-of-rolls" name="rolls" required minlength="1" maxlength="2" size="2">
-        <button id="roll">Roll a D6!</button>
-        <input type="text" id="number-of-rolls-D20" name="rolls" required minlength="1" maxlength="2" size="2">
-        <button id="roll-D20">Roll a D20!</button>
+        <div class="roll-stuff">
+            <input type="text" id="number-of-rolls" name="rolls" required minlength="1" maxlength="2" size="2">
+            <button id="roll">Roll a D6!</button>
+            <input type="text" id="number-of-rolls-D20" name="rolls" required minlength="1" maxlength="2" size="2">
+            <button id="roll-D20">Roll a D20!</button>
+        </div>
 
         <h1 id="sum-of-rolls"></h1>
-        <button id="show-all-rolls">Show all rolls</button>
+        <button id="show-all-rolls">Show all Rolls</button>
+
         <ol id="all-rolls">
 
         </ol>
         <button id="reset">Reset</button>
+        <h4>(Please Note that the Show all Rolls button may need to be clicked multiple times.)</h4>
     </div>
 
 
