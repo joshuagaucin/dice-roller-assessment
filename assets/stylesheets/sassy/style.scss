@@ -1,0 +1,32 @@
+@import './ol';
+@import './_rollStuff';
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    @include marPad();
+    border: 1px solid black;
+    flex-direction: column;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    flex-wrap: wrap;
+    background-color: lightcoral;
+}
+
+#reset {
+    @include marPad();
+    border: 1px black solid;
+    @include textColor();
+}
+
+button {
+    background: mediumpurple;
+    &:hover {
+        background: lightgreen;
+    }
+}

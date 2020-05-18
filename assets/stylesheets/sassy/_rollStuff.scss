@@ -1,0 +1,50 @@
+@mixin marPad() {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+@mixin textColor() {
+    color: white;
+}
+
+#sum-of-rolls {
+    font-size: 25px;
+    @include marPad();
+    @include textColor();
+    display: block;
+}
+
+#show-all-rolls {
+    @include marPad();
+    border: 1px black solid;
+    @include textColor();
+}
+
+#number-of-rolls,
+#roll,
+#number-of-rolls-D20,
+#roll-D20 {
+    display: inline;
+}
+
+#number-of-rolls {
+    @include marPad();
+    border: 1px black solid;
+}
+
+#roll {
+    @include marPad();
+    border: 1px black solid;
+    @include textColor();
+}
+
+#number-of-rolls-D20 {
+    @include marPad();
+    border: 1px black solid;
+}
+
+#roll-D20 {
+    @include marPad();
+    border: 1px black solid;
+    @include textColor();
+}

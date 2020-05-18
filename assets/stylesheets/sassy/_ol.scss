@@ -1,0 +1,26 @@
+                 ol {
+                     list-style-type: none;
+                     margin: 0;
+                     padding: 10px;
+                     display: flex;
+                     flex-wrap: wrap;
+                     background: lightblue;
+                 }
+                 
+                 li {
+                     display: flex;
+                     border: 1px black solid;
+                     border-radius: 5px 5px 5px 5px;
+                     margin: 1em;
+                     height: 24px;
+                     width: 24px;
+                     padding: 1em;
+                     background: antiquewhite;
+                     box-shadow: 3px 3px 1px 1px;
+                     align-content: center;
+                     justify-content: center;
+                     transition: 500ms ease-in-out;
+                     &:hover {
+                         transform: rotate(180deg);
+                     }
+                 }
