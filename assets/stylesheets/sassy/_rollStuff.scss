@@ -23,28 +23,39 @@
 #number-of-rolls,
 #roll,
 #number-of-rolls-D20,
-#roll-D20 {
+#roll-D20 #number-of-rolls-D4,
+#roll-D4,
+#number-of-rolls-D8,
+#roll-D8,
+#number-of-rolls-D10,
+#roll-D10 {
     display: inline;
 }
 
-#number-of-rolls {
+#number-of-rolls,
+
+#number-of-rolls-D20,
+#number-of-rolls-D4,
+
+#number-of-rolls-D8,
+
+#number-of-rolls-D10
+ {
     @include marPad();
     border: 1px black solid;
 }
 
-#roll {
+
+#roll,
+
+#roll-D20 
+#roll-D4,
+
+#roll-D8,
+
+#roll-D10 {
     @include marPad();
     border: 1px black solid;
     @include textColor();
 }
 
-#number-of-rolls-D20 {
-    @include marPad();
-    border: 1px black solid;
-}
-
-#roll-D20 {
-    @include marPad();
-    border: 1px black solid;
-    @include textColor();
-}
