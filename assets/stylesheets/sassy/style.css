@@ -6,7 +6,7 @@ ol {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   background: #fafafa;
 }
 
@@ -22,19 +22,19 @@ li {
   padding: 1em;
   background: antiquewhite;
   -webkit-box-shadow: 3px 3px 1px 1px;
-  box-shadow: 3px 3px 1px 1px;
+          box-shadow: 3px 3px 1px 1px;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
 }
 
 li:hover {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #sum-of-rolls {
@@ -52,17 +52,33 @@ li:hover {
   color: white;
 }
 
-#number-of-rolls, #roll, #number-of-rolls-D20, #roll-D20 #number-of-rolls-D4, #roll-D4, #number-of-rolls-D8, #roll-D8, #number-of-rolls-D10, #roll-D10 {
+#number-of-rolls,
+#roll,
+#number-of-rolls-D20,
+#roll-D20, #number-of-rolls-D4,
+#roll-D4,
+#number-of-rolls-D8,
+#roll-D8,
+#number-of-rolls-D10,
+#roll-D10 {
   display: inline;
 }
 
-#number-of-rolls, #number-of-rolls-D20, #number-of-rolls-D4, #number-of-rolls-D8, #number-of-rolls-D10 {
+#number-of-rolls,
+#number-of-rolls-D20,
+#number-of-rolls-D4,
+#number-of-rolls-D8,
+#number-of-rolls-D10 {
   margin: 0.5em;
   padding: 0.5em;
   border: 1px black solid;
 }
 
-#roll, #roll-D20, #roll-D4, #roll-D8, #roll-D10 {
+#roll,
+#roll-D20,
+#roll-D4,
+#roll-D8,
+#roll-D10 {
   margin: 0.5em;
   padding: 0.5em;
   border: 1px black solid;
@@ -74,8 +90,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #container {
@@ -87,17 +103,17 @@ body {
   border: 1px solid black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 400px;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: lightcoral;
 }
 
@@ -115,5 +131,4 @@ button {
 button:hover {
   background: lightgreen;
 }
-
 /*# sourceMappingURL=style.css.map */
