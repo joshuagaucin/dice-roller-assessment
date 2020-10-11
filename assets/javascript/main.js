@@ -1,13 +1,13 @@
 const numRolls = document.querySelector('#number-of-rolls')
-const roll = document.querySelector('#roll')
 const numRollsD4 = document.querySelector("#number-of-rolls-D4");
 const numRollsD8 = document.querySelector("#number-of-rolls-D8");
 const numRollsD10 = document.querySelector("#number-of-rolls-D10");
 const numRollsD20 = document.querySelector('#number-of-rolls-D20')
-const rollD20 = document.querySelector('#roll-D20')
-const rollD8 = document.querySelector("#roll-D8");
+const roll = document.querySelector("#roll");
 const rollD4 = document.querySelector("#roll-D4");
+const rollD8 = document.querySelector("#roll-D8");
 const rollD10 = document.querySelector("#roll-D10");
+const rollD20 = document.querySelector('#roll-D20')
 const total = document.querySelector('#sum-of-rolls')
 const showAll = document.querySelector('#show-all-rolls')
 const allRolls = document.querySelector('#all-rolls')
@@ -19,37 +19,32 @@ let reset = document.querySelector('#reset')
 
 
 
-rollD4.addEventListener('click', function() {
+rollD4.addEventListener("click", function () {
+  i = 0;
+  while (i < numRollsD4.value) {
+    let randomRollD4 = Math.floor(Math.random() * 4) + 1;
+    totalRolls += randomRollD4;
 
-    i = 0
-    while (i < numRollsD4.value) {
+    i++;
 
-        let randomRollD4 = Math.floor(Math.random() * 4) + 1;
-        totalRolls += randomRollD4
-
-        console.log(randomRoll)
-        i++;
-
-        dieRolls.push(randomRollD4)
-    }
-    total.innerText = "Sum of all rolls is " + totalRolls
-
-    console.log(dieRolls)
-})
+    dieRolls.push(randomRollD4);
+  }
+  total.innerText = "Sum of all rolls is " + totalRolls;
+});
 roll.addEventListener("click", function () {
   i = 0;
   while (i < numRolls.value) {
     let randomRoll = Math.floor(Math.random() * 6) + 1;
     totalRolls += randomRoll;
 
-    console.log(randomRoll);
+    
     i++;
 
     dieRolls.push(randomRoll);
   }
   total.innerText = "Sum of all rolls is " + totalRolls;
 
-  console.log(dieRolls);
+  
 });
 rollD8.addEventListener("click", function () {
   i = 0;
@@ -57,14 +52,14 @@ rollD8.addEventListener("click", function () {
     let randomRollD8 = Math.floor(Math.random() * 8) + 1;
     totalRolls += randomRollD8;
 
-    console.log(randomRollD8)
+    
     i++;
 
     dieRolls.push(randomRollD8);
   }
   total.innerText = "Sum of all rolls is " + totalRolls;
 
-  console.log(dieRolls);
+ 
 });
 
 rollD10.addEventListener("click", function () {
@@ -73,14 +68,14 @@ rollD10.addEventListener("click", function () {
     let randomRollD10 = Math.floor(Math.random() * 10) + 1;
     totalRolls += randomRollD10;
 
-    //console.log(randomRollD20)
+    
     i++;
 
     dieRolls.push(randomRollD10);
   }
   total.innerText = "Sum of all rolls is " + totalRolls;
 
-  console.log(dieRolls);
+  
 });
 rollD20.addEventListener('click', function() {
 
@@ -90,19 +85,19 @@ rollD20.addEventListener('click', function() {
             let randomRollD20 = Math.floor(Math.random() * 20) + 1;
             totalRolls += randomRollD20
 
-            //console.log(randomRollD20)
+           
             i++;
 
             dieRolls.push(randomRollD20)
         }
         total.innerText = "Sum of all rolls is " + totalRolls
 
-        console.log(dieRolls)
+        
     })
 
     //for each dieroll create a new list item and add it to innerHtml of all rolls
 showAll.addEventListener('click', function() {
-    let i = 0
+    let i = 0;
     while (i < dieRolls.length) {
         //let newList = document.createElement('li')
         //newList.innerHTML = dieRolls[i]
@@ -118,7 +113,7 @@ reset.addEventListener('click', function() {
     numRolls.value = ""
     total.innerHTML = ""
     allRolls.innerHTML = ""
-    dieRolls = ['']
+    dieRolls = []
     numRollsD20.value = ""
     
     numRollsD8.value = "";
